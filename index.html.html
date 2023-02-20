@@ -12,6 +12,99 @@
     <link href="src/styles.css" />
   </head>
   <body>
+          <div class="card" style="width: 50rem; height: 25rem; margin: 0 auto; top: 80px; box-shadow: 10px 10px 10px rgb(206, 206, 206);">
+          <div class="card-body">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                    <h1 id="city"></h1>
+                    <h2 id="current-time"></h2>
+                  </div>
+                  <div class="col-6">
+                      <form id="city-search">
+                      <input type="text" placeholder="🔍Search another city..." autocomplete="off" autofocus="on"  id="search-text-input"/>
+                      <input
+                        type="submit"
+                        value="Search"
+                        class="button"
+                      />
+                      </form>
+                  </div>
+                  </br>
+                  <p id="today">
+                      <div class="container">
+                          <div class="row">
+                            <div class="col-2">
+                      <i class="fa-solid fa-cloud-sun today-symbol"></i>
+                    </div>
+                    <div class="col-3" id="current-temp">
+                    <span id="today-temp"></span>
+                    <a href="" id="change-celsius"> °C
+                    </a> |
+                    <a href="" id="change-fahrenheit" > °F </a>
+                    </div>
+                    <div class="col-3" id="weather-info">
+              <span id="weather-conditions"></span>
+                      <br />
+                      Humidity: <span id="humidity"></span>%
+                      <br />
+                      Wind: <span id="wind"></span>km/h
+                    </div>
+                  </div>
+                  </p>
+                    <p class="week">
+                        <div class="container">
+                            <div class="row">
+                              <div class="col tomorrow">
+                                  <i class="fa-solid fa-cloud-showers-heavy symbol"></i>
+                                  <br />
+                                Tomorrow
+                                <br />
+                                6° / -2°
+                              </div>
+                              <div class="col thursday">
+                                  <i class="fa-solid fa-wind symbol"></i>
+                                  <br />
+                                Thursday
+                                <br />
+                                6° / -2°
+                              </div>
+                              <div class="col friday">
+                                  <i class="fa-solid fa-cloud-sun-rain symbol"></i>
+                                  <br />
+                                Friday
+                                <br />
+                                8° / 6°
+                              </div>
+                              <div class="col saturday">
+                                  <i class="fa-solid fa-cloud symbol"></i>
+                                  <br />
+                                Saturday
+                                <br />
+                                11° / 8°
+                              </div>
+                              <div class="col sunday">
+                                  <i class="fa-solid fa-cloud-sun symbol"></i>
+                                  <br />
+                                Sunday
+                                <br />
+                                12° / 8°
+                              </div>
+                              <div class="col monday">
+                                  <i class="fa-solid fa-cloud-bolt symbol"></i>
+                                  <br />
+                                Monday
+                                <br />
+                                12° / 8°
+                              </div>
+                            </div>
+                          </div>
+                    </p>
+                  </div>
+              </div>
+          </div>
+        </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
